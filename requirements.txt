@@ -1,0 +1,8 @@
+# --- Data Processing & Ingestion ---
+pandas>=2.0.0
+
+# --- Testing & Quality Assurance ---
+pytest>=8.0.0
+
+# --- Jupyter Notebook Utilities ---
+nbdime>=4.0.0
