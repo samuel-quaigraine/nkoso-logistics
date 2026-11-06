@@ -1,0 +1,23 @@
+# 1. Set default behavior for all files: auto-detect text files and normalize line endings to LF in Git
+* text=auto eol=lf
+
+# 2. Explicitly define source code & documentation as text (always convert to LF on commit)
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.sh text eol=lf
+
+# 3. Explicitly mark binary files (Git will never attempt line ending conversion or text diffs)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+
+# 4. Custom diff driver for Jupyter Notebooks (if using nbdime)
+*.ipynb diff=ipynb
