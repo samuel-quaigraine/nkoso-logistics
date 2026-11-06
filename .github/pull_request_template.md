@@ -1,18 +1,18 @@
 ## What
-Added shipment region normalisation logic to standardise incoming dispatch payload region formats.
+A concise summary of the changes introduced in this Pull Request.
 
 ## Why
-The dispatch API returns inconsistent region names (e.g., variations in casing and whitespace), causing shipment records to fail when joining against the region dimension table.
+Context around why this change is necessary (e.g., bug fix, feature requirement, data quality improvement).
 
-Closes #42
+Closes #
 
 ## How I tested
-- [x] Ran unit tests using `pytest` to confirm non-breaking changes.
-- [x] Tested common region name variations against `ingestion.py`.
-- [x] Verified normalised region codes map correctly ($f(x) = y$).
+- [x] Ran automated test suite (`pytest`).
+- [x] Verified edge cases and input validation rules.
+- [x] Tested pipeline behavior end-to-end against local sample data.
 
 ## Checklist
-- [x] Changes are focused.
-- [x] No secrets or credentials committed.
-- [x] Tests updated.
-- [x] README updated where necessary.
+- [x] Code is clean, focused, and free of commented-out debug code.
+- [x] No sensitive credentials, keys, or internal tokens committed.
+- [x] Unit tests added or updated to cover changes.
+- [x] Documentation or inline docstrings updated where appropriate.
