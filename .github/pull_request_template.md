@@ -1,18 +1,18 @@
 ## What
-Added input validation logic for incoming shipment payload data within `ingestion.py`.
+A concise summary of the changes introduced in this Pull Request.
 
 ## Why
-Malformed or missing shipment data (e.g., invalid tracking numbers, negative weights, or null payload values) was causing silent downstream processing failures during pipeline ingestion.
+Context around why this change is necessary (e.g., bug fix, feature requirement, data quality improvement).
 
-Closes #43
+Closes #
 
 ## How I tested
-- [x] Executed unit test suite via `pytest tests/test_shipment_validation.py`.
-- [x] Tested boundary cases (e.g., zero weight, missing tracking ID, malformed ISO timestamps).
-- [x] Verified that invalid records are flagged/logged correctly without crashing the pipeline execution.
+- [x] Ran automated test suite (`pytest`).
+- [x] Verified edge cases and input validation rules.
+- [x] Tested pipeline behavior end-to-end against local sample data.
 
 ## Checklist
-- [x] Changes are focused and scoped to shipment validation.
-- [x] No secrets, API keys, or production credentials committed.
-- [x] Unit tests added/updated for all new validation rules.
-- [x] Documentation or inline docstrings updated where necessary.
+- [x] Code is clean, focused, and free of commented-out debug code.
+- [x] No sensitive credentials, keys, or internal tokens committed.
+- [x] Unit tests added or updated to cover changes.
+- [x] Documentation or inline docstrings updated where appropriate.
